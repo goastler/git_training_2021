@@ -27,4 +27,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run setup
-      run: ls -la
+      run: bash setup.sh
