@@ -1,4 +1,4 @@
-# git_training_2021
+# 2021 UEA App Internship
 
 Welcome to the 2021 UEA App Internship git training.
 
