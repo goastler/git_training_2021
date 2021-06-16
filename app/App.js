@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
@@ -6,7 +5,6 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>App Project 2021 foobar</Text>
-      <StatusBar style="auto" />
     </View>
   );
 }
@@ -19,3 +17,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export const add = (a, b) => {
+    return a + b;
+}
