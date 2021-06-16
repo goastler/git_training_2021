@@ -1,0 +1,17 @@
+# Controls when the action will run. 
+on: [push, pull_request]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+      
+  # the setup job
+  jest:
+  
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    
+    steps:
+      # run the setup script
+    - uses: actions/checkout@v2
+    - name: Run tests
+      run: npm test
