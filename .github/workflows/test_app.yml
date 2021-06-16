@@ -10,7 +10,6 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     
-    working-directory: ./app
     steps:
       # run the setup script
     - uses: actions/checkout@v2
