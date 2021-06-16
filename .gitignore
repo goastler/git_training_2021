@@ -52,3 +52,6 @@ app//ios/Pods/
 # Expo
 app/.expo/
 app/web-build/
+
+
+app/package-lock.json
