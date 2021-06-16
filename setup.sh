@@ -1,5 +1,6 @@
 #! /bin/bash
 
 # print your name below, i.e. echo "george"
+echo "dominic"
 echo "Niklas"
 echo "Ben"
