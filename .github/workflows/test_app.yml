@@ -13,10 +13,10 @@ jobs:
     steps:
       # run the setup script
     - uses: actions/checkout@v2
-      # cache the node_modules, etc
-    - uses: c-hive/gha-yarn-cache@v1
     - name: Change to app dir
       run: cd app
+      # cache the node_modules, etc
+    - uses: c-hive/gha-yarn-cache@v1
     - name: Install node modules
       run: yarn install
     - name: Run tests
