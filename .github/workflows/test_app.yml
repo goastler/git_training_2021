@@ -14,4 +14,4 @@ jobs:
       # run the setup script
     - uses: actions/checkout@v2
     - name: Run tests
-      run: cd app && npm test
+      run: cd app && npm i && npm test
