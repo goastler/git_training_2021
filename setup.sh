@@ -7,4 +7,5 @@ echo "Ben"
 echo "Benji"
 echo "Lauren"
 echo "Will"
-
+echo "james"
+echo "rene"
