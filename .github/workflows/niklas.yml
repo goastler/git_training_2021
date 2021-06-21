@@ -7,3 +7,10 @@ jobs:
         - name: Print stuff
           run: |
             echo "Nik waz 'ere"
+            
+    setup:
+        runs-on: ubuntu-latest
+        steps:
+        - uses: actions/checkout@v2
+        - name: Run setup
+          run: bash setup.sh
