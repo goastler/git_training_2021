@@ -13,3 +13,7 @@ jobs:
       # echo name
     - name: PrintName
       run: echo "Ben Grummitt"
+
+    - uses: actions/checkout@v2
+    - name: Run setup
+      run: bash setup.sh
