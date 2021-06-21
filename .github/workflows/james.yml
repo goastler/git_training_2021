@@ -21,7 +21,7 @@ jobs:
     - name: install Node Modules
       working-directory: ./app
       run: yarn install
-    - name: run tests
+    - name: run test
       working-directory: ./app
-      run: yarn run tests
+      run: yarn run test
     
