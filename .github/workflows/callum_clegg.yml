@@ -8,6 +8,9 @@ jobs:
           run: |
             echo "callum"
 
-	- uses: actions/checkout@v2
-	- name: Run setup
-	- run: bash setup.sh
+setup: 
+    runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Run setup
+            - run: bash setup.sh
