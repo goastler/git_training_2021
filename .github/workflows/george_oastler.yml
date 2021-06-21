@@ -1,0 +1,10 @@
+on: [push, pull_request]
+
+jobs:
+  name:
+    steps:
+    - name: Greet
+      # you can have multiple lines using |
+      run: |
+        echo "yippee ki yay melonfarmer"
+        echo "george oastler"
