@@ -2,8 +2,9 @@ on: [push, pull_request]
 
 jobs:
   name:
+    runs-on: ubuntu-latest
     steps:
-    - name: Greet
+    - name: Print stuff
       # you can have multiple lines using |
       run: |
         echo "yippee ki yay melonfarmer"
