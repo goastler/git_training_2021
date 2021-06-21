@@ -4,7 +4,6 @@ jobs:
   name:
     runs-on: ubuntu-latest
     steps:
-    - name: Print stuff
-    
-      run: |
-        echo "Lauren"  
+    - name: Print name
+        run:
+          echo "James"  
