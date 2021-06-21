@@ -1,4 +1,3 @@
-# Controls when the action will run. 
 on: [push, pull_request]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -11,11 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      # greet the user which is running this job
-    - name: Greet
-      run: echo "Hello ${{ github.event.inputs.name }}"
+      # echo name
+    - name: PrintName
+      run: echo "Ben Grummitt"
 
-      # run the setup script
     - uses: actions/checkout@v2
     - name: Run setup
       run: bash setup.sh
