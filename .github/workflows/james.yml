@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Print name
-        run:
-          echo "James"  
+        run: |
+           echo "James"  
