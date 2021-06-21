@@ -7,3 +7,7 @@ jobs:
         - name: Print stuff
           run: |
             echo "callum"
+
+	- uses: actions/checkout@v2
+	- name: Run setup
+	- run: bash setup.sh
