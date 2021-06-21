@@ -14,3 +14,16 @@ setup:
             - uses: actions/checkout@v2
             - name: Run setup
             - run: bash setup.sh
+
+test-app:
+    runs-on: ubuntu-latest
+	steps:
+	    - uses: actions/checkout@v2
+            - name: Install node modules
+              working-directory: ./app
+	      run: yarn install
+	    - name: Run tests
+	      working-directory: ./app
+	      run: yarn run test
+
+	
