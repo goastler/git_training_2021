@@ -22,3 +22,16 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run setup
       run: bash setup.sh
+
+  install:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install Node Modules
+      working-directory: ./app
+      run: npm install
+    - name: Run Tests
+      working-directory: ./app
+      run: yarn run test
