@@ -14,10 +14,27 @@ jobs:
       # greet the user which is running this job
     - name: Greet
       run: 
-            echo "Hello ${{ github.event.inputs.name }}"
             echo "yeye"
 
       # run the setup script
     - uses: actions/checkout@v2
     - name: Run setup
       run: bash setup.sh
+
+
+  # new job, 
+
+  test-app:
+  
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+  	
+    steps:
+      # run the set up scripts
+    - uses: actions/checkout@v2
+      # todo need to chche the node_modules, etc
+    - name: Install node modules  
+      working-directory: ./app
+      run: yarn install
+      working-directory: ./app
+      run: yarn run test
