@@ -1,0 +1,8 @@
+on: [push, pull_request]
+
+jobs:
+  name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Benji's name
+        run: echo "Benji :)"
