@@ -22,6 +22,6 @@ jobs:
       working-directory: ./app
       run: yarn install
     - name: run tests
-      work-directory: ./app
+      working-directory: ./app
       run: yarn run tests
     
