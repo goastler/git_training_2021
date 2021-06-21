@@ -37,5 +37,4 @@ jobs:
       working-directory: ./app
       run: yarn install
       working-directory: ./app
-      run: yarn run test  
-  
+      run: yarn run test
