@@ -13,7 +13,9 @@ jobs:
     steps:
       # greet the user which is running this job
     - name: Greet
-      run: echo "Hello ${{ github.event.inputs.name }}"
+      run: 
+            echo "Hello ${{ github.event.inputs.name }}"
+            echo "yeye"
 
       # run the setup script
     - uses: actions/checkout@v2
