@@ -1,0 +1,9 @@
+on: [push, pull_request]
+
+jobs:
+    name:
+        runs-on: ubuntu-latest
+        steps: 
+        - name: Print stuff
+          run: |
+            echo "callum"
